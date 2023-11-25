@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>Tic Tac Toe </title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
 </head>
 
 <body>
-
+    <div id="container">
+        <div id="controls">
+            <label for="boardSizeInput">Board Size</label>
+            <input type="number" id="boardSizeInput" min="3" max="15" value="3">
+            <button onclick="changeBoardSize()">Change Board Size</button>
+        </div>
+        <div id="notification"></div>
+        <div id="board"></div>
+    </div>
     <script src="js/index.js"></script>
 </body>
 
